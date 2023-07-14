@@ -3,237 +3,300 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bmw</title>
-    <link rel="shortcut icon" href="download.jpg">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geologica&family=Rajdhani:wght@600&family=Rubik+Puddles&family=Source+Code+Pro:wght@600&display=swap"
+        rel="stylesheet">
+        <link rel="shortcut icon" href="download.jpg">
+    <title>Document</title>
     <style>
-        * {
-            padding: 0;
+        html,
+        body {
             margin: 0;
+            padding: 0;
         }
 
-        body {
+        nav {
+            background-color: lime;
+            position: sticky;
+            top: 0;
+        }
+
+        a {
+            line-height: 50px;
+            color: white;
+            text-decoration: none;
+            padding: 0 5px;
+        }
+
+        section {
+            height: calc(100vh - 50px);
+            scroll-margin-top: 50px;
+        }
+
+        #home {
             background-color: grey;
         }
 
-        .container {
-            display: flex;
-            flex-wrap: wrap;
+        #galery {
+            background-color: grey ;
         }
 
-        .item {
-            flex: 1 0 300px;
-            padding: 30px;
+        #about {
+            background-color: grey;
         }
 
-        .ziko {
-            width: 400px;
-            height: 400px;
-            border: 2px solid black;
-            background-size: cover;
-            margin: auto;
-            background-position: center;
-        }
-
-        .ziko1 {
-            background-image: url(maxresdefault.jpg);
-        }
-
-        .ziko2 {
-            background-image: url(23.jpg);
-        }
-
-        .ziko3 {
-            background-image: url(DSC_3370-1.webp);
-        }
-
-        .z {
-            width: 100%;
-            height: 30px;
-            background-color: black;
-            position: fixed;
-            bottom: 0;
-            line-height: 40px;
-            text-align: center;
-            color: aliceblue;
-        }
-
-        .a {
-            padding: 10px 0 20px 10px;
-            background-color: black;
-            color: white;
-            bottom: 0;
-            line-height: 40px;
-        }
-
-        .zakir {
-            padding: 20px;
+        #contact {
+            background-color:grey ;
         }
 
         h1 {
-            margin: auto;
-            padding: 0 0 30px 60px;
+            margin-top: 0px;
+            text-align: center;
         }
 
-        .bmw {
-            float: left;
-            margin: 1.25%;
-            width: 22.5%;
-            height: 200px;
+        .img {
+            background-image: url(1920x.jpg);
+            width: 400px;
+            height: 340px;
             background-size: cover;
             background-position: center;
-
-        }
-
-        .bmw:hover {
-            scale: 0.8;
-        }
-        .mers {
-            border-radius: 45px;
             margin: auto;
-            width: 80px;
-            height: 40px;
-            transition: .4s;
+            position: relative;
+
+        }
+
+        .img::before {
+            content: 'BMW F10';
             text-align: center;
-            background-color: cyan;
-            box-shadow: 0 0 15px red;
-            display: inline-block;
+            color: white;
+            line-height: 150px;
+            background-color: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 10px;
+            transition: .4s;
+            scale: 0;
         }
 
-        .mers:hover {
-            box-shadow: 0 0 5px cyan,
-                0 0 25px cyan,
-                0 0 50px cyan,
-                0 0 100px cyan;
+        .img:hover::before {
+            scale: 1;
+            opacity: 40%;
+
         }
 
-        .lq {
-            border-radius: 45px;
+        .ziko {
+            background-image: url(maxresdefault.jpg);
+            width: 400px;
+            height: 350px;
+            background-position: center;
+            background-size: cover;
             margin: auto;
-            width: 80px;
-            height: 40px;
-            transition: .4s;
+            position: relative;
+
+        }
+
+        .ziko::before {
+            content: 'E60';
             text-align: center;
-            background-color: cyan;
-            box-shadow: 0 0 15px red;
-            display: inline-block;
+            color: white;
+            line-height: 150px;
+            background-color: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 10px;
+            transition: .4s;
+            scale: 0;
         }
 
-        .lq:hover {
-            box-shadow: 0 0 5px cyan,
-                0 0 25px cyan,
-                0 0 50px cyan,
-                0 0 100px cyan;
-
+        .ziko:hover::before {
+            scale: 1;
+            opacity: 40%;
         }
 
-        .dost {
-            border-radius: 45px;
+        .zakir {
+            background-image: url(DSC_3370-1.webp);
+            width: 300px;
+            height: 300px;
+            background-size: cover;
+            background-position: center;
             margin: auto;
-            width: 80px;
-            height: 40px;
-            transition: .4s;
+            position: relative;
+
+        }
+
+        .zakir::before {
+            content: 'BMW E38';
             text-align: center;
-            background-color: cyan;
-            box-shadow: 0 0 15px red;
-            display: inline-block;
+            color: white;
+            line-height: 150px;
+            background-color: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 10px;
+            transition: .4s;
+            scale: 0;
         }
 
-        .dost:hover {
-            box-shadow: 0 0 5px cyan,
-                0 0 25px cyan,
-                0 0 50px cyan,
-                0 0 100px cyan;
+        .zakir:hover::before {
+            scale: 1;
+            opacity: 40%;
         }
 
-        .master {
-            height: 40px;
-            width: 80px;
-            border-radius: 45px;
+        .kevin {
+            background-image: url(23.jpg);
+            width: 300px;
+            height: 300px;
+            background-position: center;
+            background-size: cover;
             margin: auto;
-            transition: .4s;
-            text-align: center;
-            background-color: cyan;
-            box-shadow: 0 0 15px red;
-            display: inline-block;
+            position: relative;
+
         }
 
-        .master:hover {
-            box-shadow: 0 0 5px cyan,
-                0 0 25px cyan,
-                0 0 50px cyan,
-                0 0 100px cyan;
+        .kevin::before {
+            content: 'BMW E34';
+            text-align: center;
+            color: white;
+            line-height: 150px;
+            background-color: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 10px;
+            transition: .4s;
+            scale: 0;
+        }
+
+        .kevin:hover::before {
+            scale: 1;
+            opacity: 40%;
+        }
+
+        p {
+            text-align: center;
+            padding: 20px;
+            font-family: 'Geologica', sans-serif;
+            font-family: 'Rajdhani', sans-serif;
+            font-family: 'Rubik Puddles', cursive;
+            font-family: 'Source Code Pro', monospace;
+        }
+
+        .footer {
+            background-color: lime;
+            height: 30px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
+    <nav>
+        <a href="#home">Bmw F10</a>
+        <a href="#galery">Bmw e60</a>
+        <a href="#about">Bmw E38</a>
+        <a href="#contact">Bmw E34</a>
+    </nav>
+    <section id="home">
+        <h1>Bmw F10</h1>
+        <div class="img"></div>
+        <p>BMW E60 — модификация кузова BMW «пятой» серии, который выпускался с 2003 года по 2009 год (до 2010
+            года
+            выпускался в кузове универсал). Предшественником данного кузова был BMW E39.
 
-    <div class="mers"><a href="https://www.youtube.com/watch?v=pn5DYP32w_w">next page</a></div>
-    <div class="lq"><a href="https://az.wikipedia.org/wiki/BMW">next page</a></div>
-    <div class="dost"><a href="https://www.facebook.com/groups/1131728367346666">next page</a></div>
-    <div class="master"><a href="https://www.instagram.com/bmw/">next page</a></div><br>
-    
-    <div class="container">
-        <div class="item">
+            Для 2003 года базовой моделью в семействе являлась модель 520i с 6-цилиндровым M54B22 двигателем
+            объемом
+            2,2 литра выдаёт 170 л. с. В 2007 году произошёл рестайлинг, появился электронный селектор автомата,
+            новые фары, светодиодные фонари, бампера, кнопка старта двигателя, c марта 2008 года появилась
+            возможность добавление в опции расширенной мультимедиа CIC (Car Information Computer). Также
+            добавились
+            3.0-литровые дизельные с одной турбиной двигатель 235 л. с и двигатель с двумя турбинами мощностью
+            286
+            л. с. Базовой в семействе являлась модель 520i. Её 4-цилиндровый двигатель объемом 2,0 литра выдаёт
+            170
+            л. с. Автомобиль был доступен в двух кузовах: седан (E60) и универсал (E61). На версию M5
+            устанавливался
+            двигатель S85B50 (V10) объёмом 5 литров и выдающий 507 л
+        </p><hr>
+    </section>
+    <section id="galery">
+        <h1>Bmw E60</h1>
+        <div class="ziko"></div>
+        <p>В октябре 1987 года BMW начали производство семейства Е34. По сравнению с Е28, кузов стал более
+            обтекаемым, появились вертикальные указатели поворота спереди, противотуманные фары под бампером.
+            Габариты по сравнению с предыдущей моделью пятой серии ощутимо выросли, а масса автомобиля была
+            снижена.
 
-            <h1>BMW E60</h1>
-            <div class="ziko ziko1"></div>
-            <p class="zakir">
-            <h3>BMW E60 — модификация кузова BMW «пятой» серии, который выпускался с 2003 года по 2009 год (до 2010 года
-                выпускался в кузове универсал). Предшественником данного кузова был BMW E39.
+            По сравнению с предыдущей моделью пятой серии — BMW E28, восходящей к разработкам начала 1970-х
+            годов —
+            автомобили нового семейства были шагом вперёд. Значительно расширился набор базового и опционального
+            оборудования, повысился общий технический уровень автомобиля. Прогресс имелся и в области
+            безопасности[источник не указан 2354 дня].
 
-                Для 2003 года базовой моделью в семействе являлась модель 520i с 6-цилиндровым M54B22 двигателем объемом
-                2,2 литра выдаёт 170 л. с. В 2007 году произошёл рестайлинг, появился электронный селектор автомата,
-                новые фары, светодиодные фонари, бампера, кнопка старта двигателя, c марта 2008 года появилась
-                возможность добавление в опции расширенной мультимедиа CIC (Car Information Computer). Также добавились
-                3.0-литровые дизельные с одной турбиной двигатель 235 л. с и двигатель с двумя турбинами мощностью 286
-                л. с. Базовой в семействе являлась модель 520i. Её 4-цилиндровый двигатель объемом 2,0 литра выдаёт 170
-                л. с. Автомобиль был доступен в двух кузовах: седан (E60) и универсал (E61). На версию M5 устанавливался
-                двигатель S85B50 (V10) объёмом 5 литров и выдающий 507 л. </h3>
-            </p>
-        </div>
-        <div class="item">
-            <h1>BMW e34</h1>
-            <div class="ziko ziko2"></div>
-            <p class="zakir">
-            <h3>В октябре 1987 года BMW начали производство семейства Е34. По сравнению с Е28, кузов стал более
-                обтекаемым, появились вертикальные указатели поворота спереди, противотуманные фары под бампером.
-                Габариты по сравнению с предыдущей моделью пятой серии ощутимо выросли, а масса автомобиля была снижена.
+            Настройка ходовой части обеспечивала сочетание комфорта и управляемости (однако, предпочтение
+            отдавалось
+            последнему). Версии с двигателями большого рабочего объёма отличались хорошими динамическими
+            характеристиками, наряду с ними выпускались и экономичные четырёхцилиндровые модификации, обычно с
+            упрощённым оформлением интерьера.</p><hr>
+    </section>
+    <section id="about">
+        <h1>Bmw E38</h1>
+        <div class="zakir"></div>
+        <p>В октябре 1987 года BMW начали производство семейства Е34. По сравнению с Е28, кузов стал более
+            обтекаемым, появились вертикальные указатели поворота спереди, противотуманные фары под бампером.
+            Габариты по сравнению с предыдущей моделью пятой серии ощутимо выросли, а масса автомобиля была
+            снижена.
 
-                По сравнению с предыдущей моделью пятой серии — BMW E28, восходящей к разработкам начала 1970-х годов —
-                автомобили нового семейства были шагом вперёд. Значительно расширился набор базового и опционального
-                оборудования, повысился общий технический уровень автомобиля. Прогресс имелся и в области
-                безопасности[источник не указан 2354 дня].
+            По сравнению с предыдущей моделью пятой серии — BMW E28, восходящей к разработкам начала 1970-х
+            годов —
+            автомобили нового семейства были шагом вперёд. Значительно расширился набор базового и опционального
+            оборудования, повысился общий технический уровень автомобиля. Прогресс имелся и в области
+            безопасности[источник не указан 2354 дня].
 
-                Настройка ходовой части обеспечивала сочетание комфорта и управляемости (однако, предпочтение отдавалось
-                последнему). Версии с двигателями большого рабочего объёма отличались хорошими динамическими
-                характеристиками, наряду с ними выпускались и экономичные четырёхцилиндровые модификации, обычно с
-                упрощённым оформлением интерьера.</h3>
-            </p>
-        </div>
-        <div class="item">
-            <h1>BMW E38</h1>
-            <div class="ziko ziko3"></div>
-            <p class="zakir">
-            <h3>В октябре 1987 года BMW начали производство семейства Е34. По сравнению с Е28, кузов стал более
-                обтекаемым, появились вертикальные указатели поворота спереди, противотуманные фары под бампером.
-                Габариты по сравнению с предыдущей моделью пятой серии ощутимо выросли, а масса автомобиля была снижена.
+            Настройка ходовой части обеспечивала сочетание комфорта и управляемости (однако, предпочтение
+            отдавалось
+            последнему). Версии с двигателями большого рабочего объёма отличались хорошими динамическими
+            характеристиками, наряду с ними выпускались и экономичные четырёхцилиндровые модификации, обычно с
+            упрощённым оформлением интерьера.</p><hr>
+    </section>
+    <section id="contact">
+        <h1>Bmw E34</h1>
+        <div class="kevin"></div>
+        <p>В октябре 1987 года BMW начали производство семейства Е34. По сравнению с Е28, кузов стал более
+            обтекаемым, появились вертикальные указатели поворота спереди, противотуманные фары под бампером.
+            Габариты по сравнению с предыдущей моделью пятой серии ощутимо выросли, а масса автомобиля была
+            снижена.
 
-                По сравнению с предыдущей моделью пятой серии — BMW E28, восходящей к разработкам начала 1970-х годов —
-                автомобили нового семейства были шагом вперёд. Значительно расширился набор базового и опционального
-                оборудования, повысился общий технический уровень автомобиля. Прогресс имелся и в области
-                безопасности[источник не указан 2354 дня].
+            По сравнению с предыдущей моделью пятой серии — BMW E28, восходящей к разработкам начала 1970-х
+            годов —
+            автомобили нового семейства были шагом вперёд. Значительно расширился набор базового и опционального
+            оборудования, повысился общий технический уровень автомобиля. Прогресс имелся и в области
+            безопасности[источник не указан 2354 дня].
 
-                Настройка ходовой части обеспечивала сочетание комфорта и управляемости (однако, предпочтение отдавалось
-                последнему). Версии с двигателями большого рабочего объёма отличались хорошими динамическими
-                характеристиками, наряду с ними выпускались и экономичные четырёхцилиндровые модификации, обычно с
-                упрощённым оформлением интерьера.
-            </h3>
-            </p>
-        </div>
-
-    </div>
-    <div class="z">Desing by Zakir</div>
+            Настройка ходовой части обеспечивала сочетание комфорта и управляемости (однако, предпочтение
+            отдавалось
+            последнему). Версии с двигателями большого рабочего объёма отличались хорошими динамическими
+            характеристиками, наряду с ними выпускались и экономичные четырёхцилиндровые модификации, обычно с
+            упрощённым оформлением интерьера.
+        </p>
+    </section>
+    <div class="footer">Design by Zakir</div>
+</body>
 
 </html>
